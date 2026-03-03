@@ -15,18 +15,31 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #ffffff;
-            color: #1a1a1a;
+            color: #ffffff;
+            background: #000 url('https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/background-graffiti.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
         }
 
-        /* Logo Styling */
+        /* Dark overlay for readability on busy background */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50); /* Adjust 0.50 opacity if too dark/light */
+            z-index: -2;
+        }
+
+        /* Logo Styling – made bigger */
         .logo-container {
-            padding: 20px;
+            padding: 40px 20px 20px;
             text-align: center;
         }
         .logo {
-            max-width: 150px; /* Adjust size here */
+            max-width: 220px;          /* Increased from 150px */
             height: auto;
+            display: block;
+            margin: 0 auto 10px;
         }
 
         main {
@@ -36,6 +49,21 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 20px;
+        }
+
+        h1, p, .social-links a {
+            text-shadow: 0 2px 6px rgba(0,0,0,0.8); /* Helps text pop */
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
         }
 
         /* Social Media Section */
@@ -44,39 +72,56 @@
         }
         .social-links a {
             text-decoration: none;
-            color: #333;
-            margin: 0 15px;
+            color: #ffffff;
+            margin: 0 20px;
             font-weight: bold;
-            font-size: 1.2rem;
-            transition: color 0.3s;
+            font-size: 1.4rem;
+            transition: color 0.3s, transform 0.2s;
         }
         .social-links a:hover {
-            color: #007bff; /* Color change on hover */
+            color: #ffaa00; /* Bright orange-yellow hover to match bg energy */
+            transform: scale(1.1);
         }
 
         /* Footer */
         .main-footer {
             width: 100%;
             padding: 40px 0;
-            background-color: #fafafa;
-            border-top: 1px solid #eeeeee;
+            background: rgba(0, 0, 0, 0.6);
+            border-top: 1px solid rgba(255,255,255,0.1);
             text-align: center;
+            margin-top: auto;
         }
         .footer-content p {
-            font-size: 0.85rem;
-            color: #888;
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 180px; /* Slightly smaller on mobile */
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+            .social-links a {
+                font-size: 1.2rem;
+                margin: 0 15px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header class="logo-container">
-        <!-- Updated: Load logo directly from your GitHub repo (replace with your actual raw URL) -->
-        <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/logo.png" 
+        <!-- Replace YOUR-USERNAME and YOUR-REPO with actual values -->
+        <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/logo.png" 
              alt="Bzarlu Logo" 
              class="logo" 
-             onerror="this.style.display='none'; console.log('Logo failed to load from GitHub');">
-        <h1 id="text-logo">Bzarlu</h1> 
+             onerror="this.style.display='none'; console.log('Logo failed to load');">
+        <h1>Bzarlu</h1> 
     </header>
 
     <main>
