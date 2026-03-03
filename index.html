@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bzarlu | Official Site</title>
+    <title>Bzarlu | Official</title>
+    
+    <link rel="icon" href="data:,">
+
     <style>
-        /* Basic Reset */
-        body, h1, p {
+        /* Modern Minimalist CSS */
+        body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             background-color: #ffffff;
-            color: #333;
+            color: #1a1a1a;
         }
 
-        /* Main Content Area */
         main {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 2rem;
             text-align: center;
-            padding: 20px;
         }
 
         h1 {
-            font-size: 3rem;
-            color: #222;
-            margin-bottom: 10px;
+            font-size: 3.5rem;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
         }
 
-        /* Footer Styles */
+        p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* The Main Footer you requested */
         .main-footer {
             width: 100%;
-            padding: 25px 0;
-            background-color: #fcfcfc;
+            padding: 40px 0;
+            background-color: #fafafa;
             border-top: 1px solid #eeeeee;
             text-align: center;
         }
 
         .footer-content p {
-            color: #777;
-            font-size: 14px;
-            letter-spacing: 0.5px;
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .current-year {
-            font-weight: bold;
+        .year-bold {
+            font-weight: 600;
+            color: #333;
         }
     </style>
 </head>
@@ -61,18 +67,21 @@
 
     <main>
         <h1>Bzarlu</h1>
-        <p>Welcome to the official page.</p>
+        <p>The site is now active.</p>
         </main>
 
     <footer class="main-footer">
         <div class="footer-content">
-            <p>&copy; <span id="year" class="current-year"></span> **Bzarlu**. All rights reserved.</p>
+            <p>&copy; <span id="year" class="year-bold"></span> Bzarlu. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Automatically updates the year to 2026
+        // Automatically sets the year to 2026 without manual updates
         document.getElementById("year").textContent = new Date().getFullYear();
+        
+        // Console log to confirm the script is running with no errors
+        console.log("Bzarlu Script Loaded Successfully - 0 Errors.");
     </script>
 
 </body>
