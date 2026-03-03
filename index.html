@@ -18,6 +18,16 @@
             justify-content: center;
             min-height: 100vh;
             text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling the Logo */
+        .logo {
+            width: 120px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%; /* Remove this line if you don't want a circular logo */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         h1 {
@@ -38,6 +48,8 @@
             display: flex;
             gap: 15px;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         li a {
@@ -48,10 +60,11 @@
             border-radius: 30px;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-block;
         }
 
         li a:hover {
-            background: #e94560; /* A nice highlight color */
+            background: #e94560; 
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
         }
@@ -68,6 +81,8 @@
     </style>
 </head>
 <body>
+
+    <img src="logo.png" alt="Bzarlu Logo" class="logo">
 
     <h1>Welcome to Bzarlu</h1>
     <p>Follow us on social media:</p>
