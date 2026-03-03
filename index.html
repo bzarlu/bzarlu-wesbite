@@ -8,16 +8,25 @@
     <link rel="icon" href="data:,">
 
     <style>
-        /* Modern Minimalist CSS */
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             background-color: #ffffff;
             color: #1a1a1a;
+        }
+
+        /* Logo Styling */
+        .logo-container {
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px; /* Adjust size here */
+            height: auto;
         }
 
         main {
@@ -26,22 +35,26 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2rem;
             text-align: center;
         }
 
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: -1px;
-            margin-bottom: 0.5rem;
+        /* Social Media Section */
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #007bff; /* Color change on hover */
         }
 
-        p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        /* The Main Footer you requested */
+        /* Footer */
         .main-footer {
             width: 100%;
             padding: 40px 0;
@@ -49,39 +62,37 @@
             border-top: 1px solid #eeeeee;
             text-align: center;
         }
-
         .footer-content p {
             font-size: 0.85rem;
             color: #888;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .year-bold {
-            font-weight: 600;
-            color: #333;
         }
     </style>
 </head>
 <body>
 
+    <header class="logo-container">
+        <img src="logo.png" alt="Bzarlu Logo" class="logo" onerror="this.style.display='none'; console.log('Logo 404: Image not found');">
+        <h1 id="text-logo">Bzarlu</h1> 
+    </header>
+
     <main>
-        <h1>Bzarlu</h1>
-        <p>The site is now active.</p>
-        </main>
+        <p>Connect with us on social media:</p>
+        
+        <div class="social-links">
+            <a href="https://x.com/yourhandle" target="_blank">X (Twitter)</a>
+            <a href="https://tiktok.com/@yourhandle" target="_blank">TikTok</a>
+            <a href="https://youtube.com/@yourhandle" target="_blank">YouTube</a>
+        </div>
+    </main>
 
     <footer class="main-footer">
         <div class="footer-content">
-            <p>&copy; <span id="year" class="year-bold"></span> Bzarlu. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> **Bzarlu**. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Automatically sets the year to 2026 without manual updates
         document.getElementById("year").textContent = new Date().getFullYear();
-        
-        // Console log to confirm the script is running with no errors
-        console.log("Bzarlu Script Loaded Successfully - 0 Errors.");
     </script>
 
 </body>
