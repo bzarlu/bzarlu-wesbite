@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bzarlu Website</title>
+    <style>
+        /* This section handles the background and overall layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the social media list */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        li a:hover {
+            background: #e94560; /* A nice highlight color */
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+        }
+
+        /* Making the video look professional */
+        iframe {
+            width: 90%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: none;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Welcome to Bzarlu</h1>
     <p>Follow us on social media:</p>
+
     <ul>
         <li><a href="https://youtube.com/@bzarlu">YouTube</a></li>
         <li><a href="https://x.com/bzarlu1">X</a></li>
         <li><a href="https://tiktok.com/@bzarlu_official">TikTok</a></li>
     </ul>
-    <iframe src="https://www.youtube.com/embed/UCrFPPKFIWU4dUq_S6Mpae2g" frameborder="0" allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/UCrFPPKFIWU4dUq_S6Mpae2g" allowfullscreen></iframe>
+
 </body>
 </html>
