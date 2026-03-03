@@ -16,27 +16,26 @@
             flex-direction: column;
             min-height: 100vh;
             color: #ffffff;
-            background: #000 url('https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/background-graffiti.jpg') no-repeat center center fixed;
+            background: #000 url('background.jpg') no-repeat center center fixed;
             background-size: cover;
             position: relative;
         }
 
-        /* Dark overlay for readability on busy background */
+        /* Dark overlay for readability */
         body::before {
             content: "";
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.50); /* Adjust 0.50 opacity if too dark/light */
+            background: rgba(0, 0, 0, 0.50);
             z-index: -2;
         }
 
-        /* Logo Styling – made bigger */
         .logo-container {
             padding: 40px 20px 20px;
             text-align: center;
         }
         .logo {
-            max-width: 220px;          /* Increased from 150px */
+            max-width: 220px;
             height: auto;
             display: block;
             margin: 0 auto 10px;
@@ -53,7 +52,7 @@
         }
 
         h1, p, .social-links a {
-            text-shadow: 0 2px 6px rgba(0,0,0,0.8); /* Helps text pop */
+            text-shadow: 0 2px 6px rgba(0,0,0,0.8);
         }
 
         h1 {
@@ -66,7 +65,6 @@
             margin-bottom: 30px;
         }
 
-        /* Social Media Section */
         .social-links {
             margin-top: 20px;
         }
@@ -79,11 +77,10 @@
             transition: color 0.3s, transform 0.2s;
         }
         .social-links a:hover {
-            color: #ffaa00; /* Bright orange-yellow hover to match bg energy */
+            color: #ffaa00;
             transform: scale(1.1);
         }
 
-        /* Footer */
         .main-footer {
             width: 100%;
             padding: 40px 0;
@@ -98,26 +95,17 @@
             margin: 0;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 600px) {
-            .logo {
-                max-width: 180px; /* Slightly smaller on mobile */
-            }
-            h1 {
-                font-size: 2.8rem;
-            }
-            .social-links a {
-                font-size: 1.2rem;
-                margin: 0 15px;
-            }
+            .logo { max-width: 180px; }
+            h1 { font-size: 2.8rem; }
+            .social-links a { font-size: 1.2rem; margin: 0 15px; }
         }
     </style>
 </head>
 <body>
 
     <header class="logo-container">
-        <!-- Replace YOUR-USERNAME and YOUR-REPO with actual values -->
-        <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/logo.png" 
+        <img src="logo.png" 
              alt="Bzarlu Logo" 
              class="logo" 
              onerror="this.style.display='none'; console.log('Logo failed to load');">
