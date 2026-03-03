@@ -3,102 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bzarlu Website</title>
+    <title>Bzarlu | Official Site</title>
     <style>
-        /* This section handles the background and overall layout */
-        body {
+        /* Basic Reset */
+        body, h1, p {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             min-height: 100vh;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 20px;
         }
 
-        /* Styling the Logo */
-        .logo {
-            width: 120px; /* Adjust size as needed */
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 50%; /* Remove this line if you don't want a circular logo */
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            color: #222;
             margin-bottom: 10px;
-            letter-spacing: 2px;
         }
 
-        p {
-            opacity: 0.8;
-            margin-bottom: 20px;
+        /* Footer Styles */
+        .main-footer {
+            width: 100%;
+            padding: 25px 0;
+            background-color: #fcfcfc;
+            border-top: 1px solid #eeeeee;
+            text-align: center;
         }
 
-        /* Styling the social media list */
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
+        .footer-content p {
+            color: #777;
+            font-size: 14px;
+            letter-spacing: 0.5px;
         }
 
-        li a {
-            text-decoration: none;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 10px 20px;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            display: inline-block;
-        }
-
-        li a:hover {
-            background: #e94560; 
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
-        }
-;
+        .current-year {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <img src="logo.png" alt="Bzarlu Logo" class="logo">
+    <main>
+        <h1>Bzarlu</h1>
+        <p>Welcome to the official page.</p>
+        </main>
 
-    <h1>Welcome to Bzarlu</h1>
-    <p>Follow us on social media:</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year" class="current-year"></span> **Bzarlu**. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <ul>
-        <li><a href="https://youtube.com/@bzarlu">YouTube</a></li>
-        <li><a href="https://x.com/bzarlu1">X</a></li>
-        <li><a href="https://tiktok.com/@bzarlu_official">TikTok</a></li>
-    </ul>
-.main-footer {
-    width: 100%;
-    padding: 30px 0;
-    background-color: #f9f9f9; /* Light grey background */
-    border-top: 1px solid #eaeaea;
-    text-align: center;
-}
+    <script>
+        // Automatically updates the year to 2026
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
-.footer-content p {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    color: #555;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-    
 </body>
 </html>
