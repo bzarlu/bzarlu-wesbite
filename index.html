@@ -3,62 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bzarlu | Official</title>
+  <title>BZARLU | Official</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #000;
+      margin: 0;
+      padding: 0;
       color: #fff;
       text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      color: #ff6600; /* orange to match your character/logo */
+      background: url('background.jpg') no-repeat center center fixed;  /* CHANGE THIS if your bg file is named differently, e.g., bg.png or images/background.jpg */
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .logo {
+      max-width: 300px;  /* Adjust size as needed */
+      margin: 30px auto 20px;
+      display: block;
+    }
+    h1 {
+      color: #ff6600;  /* Orange to match your vibe */
+      margin: 10px 0;
+    }
+    .video-section {
+      margin: 50px 0;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark box to make video pop over bg */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
     }
     .social-links {
-      margin: 40px 0;
+      margin: 50px 0;
     }
     .social-links a {
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.2em;
+      margin: 0 20px;
+      font-size: 1.3em;
     }
     .social-links a:hover {
       color: #ff6600;
     }
-    .video-section {
-      margin: 40px 0;
-      padding: 20px;
-      background: #111;
-      border-radius: 10px;
-    }
-    iframe {
-      max-width: 100%;
-      border: none;
-    }
     footer {
-      margin-top: 60px;
+      margin-top: 80px;
       font-size: 0.9em;
-      color: #888;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Your logo (uploaded to repo root or adjust path) -->
+    <img src="logo.png" alt="BZARLU Logo" class="logo">
+
     <h1>BZARLU</h1>
     <p>Official Site – Music, Drops, Vibes</p>
 
-    <!-- The embedded YouTube video added here in the middle -->
+    <!-- The Dream video embed in the middle -->
     <div class="video-section">
       <h2>The Dream 💔</h2>
       <p>Emotional Liquid Drum & Bass – The only place we still meet...</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ItwwiCf8k" title="The Dream by BZARLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/w0ItwwiCf8k" title="The Dream by BZARLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="social-links">
