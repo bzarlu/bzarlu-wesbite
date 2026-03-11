@@ -62,94 +62,19 @@
             transform: scale(1.05);
         }
 
-        .music-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .track-card {
-            background: rgba(0, 0, 0, 0.6);
+        .playlist-container {
+            max-width: 800px;
+            margin: 0 auto 60px;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 8px 32px rgba(255, 102, 0, 0.2);
-            transition: all 0.3s ease;
             border: 1px solid rgba(255, 102, 0, 0.3);
         }
 
-        .track-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 40px rgba(255, 102, 0, 0.4);
-            border-color: #ff6600;
-        }
-
-        .video-container {
-            position: relative;
+        .playlist-container iframe {
             width: 100%;
-            padding-bottom: 56.25%;
-            background: #000;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            height: 600px;
             border: none;
-        }
-
-        .track-info {
-            padding: 20px;
-        }
-
-        .track-info h3 {
-            color: #ff6600;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-
-        .track-info p {
-            color: #ccc;
-            font-size: 0.95em;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-
-        .track-links {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            flex: 1;
-            min-width: 120px;
-            padding: 10px 15px;
-            text-align: center;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: 2px solid #ff6600;
-            color: #ff6600;
-            background: transparent;
-        }
-
-        .btn:hover {
-            background: #ff6600;
-            color: #000;
-        }
-
-        .btn-primary {
-            background: #ff6600;
-            color: #000;
-            border-color: #ff6600;
-        }
-
-        .btn-primary:hover {
-            background: #ff8533;
         }
 
         footer {
@@ -178,16 +103,8 @@
                 font-size: 2em;
             }
 
-            .music-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .track-links {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
+            .playlist-container iframe {
+                height: 400px;
             }
         }
     </style>
@@ -206,90 +123,8 @@
             </a>
         </header>
 
-        <div class="music-grid">
-            <!-- Track 1 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/cdB1WmMPD2w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>I am gonna</h3>
-                    <p>Liquid Drum & Bass</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=cdB1WmMPD2w" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Track 2 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/w0ItwwiCf8k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>The Dream</h3>
-                    <p>Emotional Liquid Drum & Bass</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=w0ItwwiCf8k" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Track 3 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/MuiWJqHlGz8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>she's all mine</h3>
-                    <p>Liquid Drum & Bass</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=MuiWJqHlGz8" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Track 4 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/LsH4znW-m8g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>Track 4</h3>
-                    <p>Liquid Drum & Bass</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=LsH4znW-m8g" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Track 5 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/1Gi62QnrYbQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>Boom</h3>
-                    <p>For bass lovers</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=1Gi62QnrYbQ" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Track 6 -->
-            <div class="track-card">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/18TsDXHSAn4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="track-info">
-                    <h3>tell me</h3>
-                    <p>liquid drum and bass</p>
-                    <div class="track-links">
-                        <a href="https://www.youtube.com/watch?v=18TsDXHSAn4" target="_blank" class="btn btn-primary">Watch on YouTube</a>
-                    </div>
-                </div>
-            </div>
+        <div class="playlist-container">
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLKEk8c7QSfaeL5yqsHUFu2uSfuvmq5y5i" title="BZARLU Music Playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <footer>
