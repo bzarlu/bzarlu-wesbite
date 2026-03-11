@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BZARLU Music | All Tracks</title>
+    <meta name="description" content="Listen to all BZARLU's music - Emotional Liquid Drum & Bass tracks and releases.">
+    <meta name="keywords" content="BZARLU music, liquid drum and bass, emotional dnb, music tracks">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #ff6600;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-btn {
+            display: inline-block;
+            background: #ff0000;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .subscribe-btn:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
+
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .track-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(255, 102, 0, 0.2);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 102, 0, 0.3);
+        }
+
+        .track-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(255, 102, 0, 0.4);
+            border-color: #ff6600;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .track-info {
+            padding: 20px;
+        }
+
+        .track-info h3 {
+            color: #ff6600;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .track-info p {
+            color: #ccc;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .track-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #ff6600;
+            color: #ff6600;
+            background: transparent;
+        }
+
+        .btn:hover {
+            background: #ff6600;
+            color: #000;
+        }
+
+        .btn-primary {
+            background: #ff6600;
+            color: #000;
+            border-color: #ff6600;
+        }
+
+        .btn-primary:hover {
+            background: #ff8533;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 102, 0, 0.2);
+            color: #888;
+        }
+
+        .nav-back {
+            margin-bottom: 20px;
+        }
+
+        .nav-back a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .nav-back a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .music-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .track-links {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+        <header>
+            <h1>🎵 BZARLU Music</h1>
+            <p class="subtitle">Emotional Liquid Drum & Bass</p>
+            <a href="https://www.youtube.com/@bzarlu?sub_confirmation=1" target="_blank" class="subscribe-btn">
+                🔴 Subscribe on YouTube
+            </a>
+        </header>
+
+        <div class="music-grid">
+            <!-- Track 1 -->
+            <div class="track-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/cdB1WmMPD2w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="track-info">
+                    <h3>Track 1</h3>
+                    <p>Liquid Drum & Bass</p>
+                    <div class="track-links">
+                        <a href="https://www.youtube.com/watch?v=cdB1WmMPD2w" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div class="track-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/w0ItwwiCf8k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="track-info">
+                    <h3>The Dream</h3>
+                    <p>Emotional Liquid Drum & Bass</p>
+                    <div class="track-links">
+                        <a href="https://www.youtube.com/watch?v=w0ItwwiCf8k" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 3 -->
+            <div class="track-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MuiWJqHlGz8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="track-info">
+                    <h3>Track 3</h3>
+                    <p>Liquid Drum & Bass</p>
+                    <div class="track-links">
+                        <a href="https://www.youtube.com/watch?v=MuiWJqHlGz8" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 4 -->
+            <div class="track-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LsH4znW-m8g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="track-info">
+                    <h3>Track 4</h3>
+                    <p>Liquid Drum & Bass</p>
+                    <div class="track-links">
+                        <a href="https://www.youtube.com/watch?v=LsH4znW-m8g" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🎵 More music coming soon! Subscribe to stay updated.</p>
+            <p>© 2026 BZARLU – All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
