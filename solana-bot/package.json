@@ -1,0 +1,33 @@
+{
+  "name": "solana-token-analyzer-bot",
+  "version": "1.0.0",
+  "description": "A Solana token analyzer bot that monitors DexScreener for volume spikes and pump patterns, then sends Telegram alerts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "solana",
+    "dexscreener",
+    "telegram",
+    "crypto",
+    "bot",
+    "trading"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
